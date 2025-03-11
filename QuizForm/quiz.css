@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+#logo{
+width: max(10rem, 18vw);
+background-color: black;
+
+}
+
+h1{
+    color:#f1be32;
+    font-size: 25px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    max-width: 300px;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav>ul>li{
+    display: block;
+    color:white;
+
+}
+
+nav>ul>li:hover{
+    background-color: white;
+    color: pink;
+}
+
+li>a{
+    color: inherit;
+    text-decoration: none;
+}
+
+section{
+    width: 80%;
+    margin: 10px auto;
+}
+
+h1,h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    border-bottom: 4px solid grey;
+}
+
+.info label, .info input{
+    display: block;
+    margin-top: 10px;
+}
+
+
+.info input{
+    width: 40%;
+}
+
+fieldset{
+    border: none;
+}
+
+h3::before{
+    content: "Question #"
+}
+
+.answer-list{
+    list-style: none;
+    padding: 0;
+}
+
+.formrow label, .info input{
+    display: block;
+    margin-top: 10px;
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    width: 20%;
+    height: 40px;
+}
+
+footer{
+    background-color: #1b1b32;
+    color: white;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <link  rel="stylesheet" href="quiz.css">
+    <title>HTML/CSS Quiz</title>
+ </head>   
+
+ <body>
+
+
+<header>
+<img id="logo" alt="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+<h1>HTML/CSS Quiz</h1>
+<nav>
+    <ul>
+        <li><a href="#student-info">INFO</a></li>
+        <li><a href="#html-question">HTML</a></li>
+        <li><a href="#css-question">CSS</a></li>
+    </ul>
+</nav>
+
+</header>
+
+<main>
+<form>
+<section role="region" aria-labelledby="student-info">
+<h2 id="student-info">Student Info</h2>
+<div class="info">
+<label for="name">
+  Name: <input id="name" name="name" type="text">
+</label>
+<label for="email">
+    Email: <input id="email" name="name" type="email">
+  </label>
+  <label for="dob">
+    Date-Of-Birth: <input id="namdobe" name="dob" type="date">
+  </label>
+</div>
+</section>
+
+
+<section role="region" aria-labelledby="html-question"> 
+    <h2 id="html-question">Html</h2>
+    <h3>1</h3>
+ <div class="question-block">   
+<fieldset>
+<legend>The legend element represents a caption for the content of its
+    parent fieldset element</legend>
+<ul class="answer-list">
+    <li>
+        <label for="true"> <input type="radio" name="answer" id="true" value="true">True</label>
+    </li>
+    <li>
+        <label for="false"> <input type="radio" name="answer" id="false" value="false">False
+        </label>
+    </li>
+</ul>
+
+</fieldset>
+</div>
+
+
+<h3>2</h3>
+ <div class="question-block">   
+<fieldset>
+<legend>A label element nesting an input element is required to have a
+    for attribute with the same value as the input's id</legend>
+<ul class="answer-list">
+    <li>
+        <label for="truee">
+            <input type="radio" name="answer" id="truee" value="truee">
+             True
+        </label>
+    </li>
+    <li>
+        <label for="falsee">
+            <input type="radio" name="answer" id="falsee" value="falsee">
+             False
+        </label>
+    </li>
+</ul>
+</fieldset>
+</div>
+</section>
+
+
+<section>
+    <h2 id="css-question">CSS</h2>
+ <div class="formrow">
+   <div class="question-block">
+    <label for="selector">
+        Can the CSS margin property accept negative values?
+    </label>
+</div>
+<div class="answer">
+        <select id="selector">
+            <option value="select">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+</div>
+<div class="question-block"> <label for="text">Do you have any questions:
+</label>
+</div>
+    
+ <div class=answer>
+    <textarea id="text" rows="5" cols="30">
+
+    </textarea>
+ </div>       
+</div>
+</section>
+</form>
+
+<button type="submit">Send</button>
+
+<footer>
+    SIPS <br>
+    QUEENS <br>
+    NEW YORK <br>
+</footer>
+</main>
+
+
+ </body>
+</html>

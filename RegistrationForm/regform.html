@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="regform.css">
+<title>REG FORM</title>
+</head>
+
+<body>
+
+<h1>Registration Form</h1>
+<p>Please fill out the form below!</p>
+
+<form method="post" action='https://register-demo.freecodecamp.org'>
+<fieldset>
+  <label for="first-name">Enter your First Name: <input type="text" id="first-name" required name="first-name"/></label>
+  <label for="last-name">Enter your Last Name: <input type="text" id="last-name" required name="last-name"/></label>
+  <label for="email">Enter your Email: <input type="email" id="email" required name="email"/></label>
+  <label for="password">Enter a Password: <input type="password" id="password" required name="password" pattern="[a-z,0-5]{8,}"/></label>
+</fieldset>
+
+<fieldset>
+  <legend class="account-type">Account Type (required)</legend>
+  <label for="account-type"><input class="inline" id="personal-type" name="account-type" type="radio" checked />Personal</label>
+  <label for="account-type"><input class="inline"  id="business-type" name="account-type" type="radio" />Business</label>
+</fieldset>
+
+<fieldset class="at">
+  <label for="profile-pic">Upload a profile picture: <input id="profile-pic" name="profile-pic" type="file" /> </label>
+  <label for="age">Input your age: <input type="number" id="age" name="age" min="13" max="120"/></label>
+  <label for="referrer">How did you hear about us 
+    <select id="referrer" name="referrer">
+   <option value="">select one</option>
+   <option value="1">Handshake</option>
+   <option value="2">Linkedin</option>
+   <option value="3">Indeed</option>
+  </select>
+  </label>
+  <label for="bio">Provide a bio: <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Coding..."></textarea> </label>
+  </fieldset>
+
+ <label for="terms"><input type="checkbox" id="terms" name="terms" required/> <p>I accept these <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></p>
+ </label>
+
+<input class="submit" type="submit" name="submit">
+
+</form>
+</body>
+</html>
